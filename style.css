@@ -34,6 +34,15 @@ footer,
   font-size: 18px;
 }
 
+li {
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+li:hover {
+  opacity: 0.5;
+}
+
 .subtitle {
   margin-bottom: 10px;
 }
@@ -77,19 +86,20 @@ footer {
 .second-button {
   padding: 8px 30px;
   color: #e5e7eb;
-  background-color: #3882f6;
+  background-color: rgb(56, 130, 246);
   cursor: pointer;
   border: none;
   border-radius: 6px;
   font-weight: bold;
   font-size: 16px;
+  transition: background-color 0.2s;
 }
 
 .image {
   color: #e5e7eb;
   background-color: #767676;
   width: 500px;
-  height: 200px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,4 +191,9 @@ footer {
 
 .second-button {
   border: 2px solid #e5e7eb;
+}
+
+.first-button:hover,
+.second-button:hover {
+  background-color: rgb(56, 130, 246, 0.4);
 }
