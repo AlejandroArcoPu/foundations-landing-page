@@ -8,7 +8,6 @@ body {
   background-color: #1f2937;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 header {
@@ -28,10 +27,15 @@ ul {
 
 ul,
 footer,
-.subtitle {
+.subtitle,
+.call-subtitle {
   font-weight: 100;
   color: #e5e7eb;
   font-size: 18px;
+}
+
+.subtitle {
+  margin-bottom: 10px;
 }
 
 footer {
@@ -42,12 +46,14 @@ footer {
 }
 
 .logo,
-.title {
+.title,
+.call-title {
   color: #f9faf8;
   font-weight: 900;
 }
 
-.logo {
+.logo,
+.call-title {
   font-size: 24px;
 }
 
@@ -59,29 +65,30 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
-  gap: 25px;
+  height: 450px;
 }
 
 .awesome {
   width: 450px;
-  padding: 25px;
+  padding: 35px;
 }
 
-.first-button {
-  padding: 8px 25px;
+.first-button,
+.second-button {
+  padding: 8px 30px;
   color: #e5e7eb;
   background-color: #3882f6;
   cursor: pointer;
   border: none;
   border-radius: 6px;
-  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .image {
   color: #e5e7eb;
   background-color: #767676;
-  min-width: 500px;
+  width: 500px;
   height: 200px;
   display: flex;
   align-items: center;
@@ -108,6 +115,10 @@ footer {
   border: 4px solid #3882f6;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+
+.shape-info {
+  color: #525252;
 }
 
 .subinfo-box {
@@ -157,8 +168,17 @@ footer {
 }
 
 .action {
-  height: 150px;
-  width: 950px;
+  color: #e5e7eb;
+  height: 120px;
+  width: 1000px;
   background-color: #3882f6;
   border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.second-button {
+  border: 2px solid #e5e7eb;
 }
